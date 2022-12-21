@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express()
 app.use(express.json())
+const PORT = process.env.PORT || 3030;
 
 //DB connection
 const mongoose = require('mongoose');
@@ -36,4 +37,4 @@ app.post('/api/pelis', (req, res) => {
 });
 
 
-app.listen(5005, ()=> console.log("Server connected"));
+app.listen(PORT, ()=> console.log("Server connected"));

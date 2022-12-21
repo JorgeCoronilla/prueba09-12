@@ -1,9 +1,6 @@
 import React from 'react'
 
 export const Form = () => {
- 
-  
-   
 
     const conseguirDatos = e => {
         e.preventDefault();
@@ -26,10 +23,6 @@ export const Form = () => {
         fetch("/api/pelis", Metadatos)
         .then((res) => console.log(res))
     }
-    
-   
-     
-   
   
   return (
     <div>
